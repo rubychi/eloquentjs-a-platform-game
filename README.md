@@ -10,7 +10,7 @@ You can see a complete working example [here](https://rubychi.github.io/eloquent
 ## Features
 
 * Four difficulty levels
-* Total of three lives
+* The character has a total of three lives
 * Move the character with the arrow keys
 
 ### Custom Features
