@@ -16,7 +16,8 @@ You can see a complete working example [here](https://rubychi.github.io/eloquent
 ### Custom Features
 
 * Add lives image
-* Add background music and sound effects
+* Add text indicating number of coins collected in each level
+* Add background music and sound effects (from Super Mario World Original Soundtrack)
 
 ### Upcoming
 
