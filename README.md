@@ -12,6 +12,7 @@ You can see a complete working example [here](https://rubychi.github.io/eloquent
 * Four difficulty levels
 * The character has a total of three lives
 * Move the character with the arrow keys
+* Press ESC to pause/unpause the game
 
 ### Custom Features
 
