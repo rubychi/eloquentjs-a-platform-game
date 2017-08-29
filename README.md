@@ -44,7 +44,12 @@ Follow the instructions below to set up the environment and run this project on 
 > npm install
 ```
 
-3. Build the production version (all files will be put inside the folder "docs")
+3. Install gulp package globally to execute gulp command on your machine
+```
+> npm install gulp -g
+```
+
+4. Build the production version (all files will be put inside the folder "docs")
 ```
 > gulp build
 ```
