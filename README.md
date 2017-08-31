@@ -3,8 +3,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/rubychi/eloquentjs-a-platform-game/badge.svg)](https://snyk.io/test/github/rubychi/eloquentjs-a-platform-game)
 [![NSP Status](https://nodesecurity.io/orgs/rubychi/projects/f7cfe98b-2c9e-4e0e-b59d-66a273db03fd/badge)](https://nodesecurity.io/orgs/rubychi/projects/f7cfe98b-2c9e-4e0e-b59d-66a273db03fd)
 
-A platform game based on [Dark Blue](http://www.lessmilk.com/game/dark-blue/) from [Eloquent JavaScript](http://eloquentjavascript.net/).<br>
-The goal is to collect the coins while avoiding touching the lava. A level is completed when all coins have been collected.
+A platform game based on [Dark Blue](http://www.lessmilk.com/game/dark-blue/) from [Eloquent JavaScript](http://eloquentjavascript.net/)
 
 ## [Live Demo](https://rubychi.github.io/eloquentjs-a-platform-game)
 
@@ -12,7 +11,7 @@ You can see a complete working example [here](https://rubychi.github.io/eloquent
 
 ## Features
 
-* Four difficulty levels
+* Four levels, the goal is to collect coins while avoiding touching the lava
 * The character has a total of three lives
 * Move the character with the arrow keys
 * Press ESC to pause/unpause the game
