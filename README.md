@@ -12,7 +12,7 @@ You can see a complete working example [here](https://rubychi.github.io/eloquent
 ## Features
 
 * Four levels, the goal is to collect coins while avoiding touching the lava
-* The character has a total of three lives
+* The character has a total of three lives, the game starts over from the level 1 if the player failed
 * Move the character with the arrow keys
 * Press ESC to pause/unpause the game
 
