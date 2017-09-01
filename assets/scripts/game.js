@@ -1,4 +1,5 @@
-let player = document.getElementById("sound");
+let bgm = document.getElementById("bgm");
+let sound = document.getElementById("sound");
 
 class Vector {
   constructor(x, y) {
@@ -75,8 +76,8 @@ class Player {
     if (obstacle) {
       level.playerTouched(obstacle);
       if (keys.up && this.speed.y > 0) {
-        player.setAttribute("src", "assets/sound/smb_jump-small.wav");
-        player.play();
+        sound.setAttribute("src", "assets/sound/smb_jump-small.wav");
+        sound.play();
         this.speed.y -= jumpSpeed;
       } else {
         this.speed.y = 0;
@@ -240,21 +241,21 @@ class Level {
   }
   playerTouched(type, actor) {
     if (type === "lava" && this.status === null) {
-      player.setAttribute("src", "assets/sound/smb_mariodie.wav");
-      player.play();
+      bgm.setAttribute("src", "assets/sound/smb_mariodie.wav");
+      bgm.play();
       this.status = "lost";
       this.finishDelay = 1;
     } else if (type === "coin") {
-      player.setAttribute("src", "assets/sound/smb_coin.wav");
-      player.play();
+      sound.setAttribute("src", "assets/sound/smb_coin.wav");
+      sound.play();
       this.actors = this.actors.filter((other) => {
         return other !== actor;
       });
       if (!this.actors.some((actor) => {
         return actor.type === "coin";
       })) {
-        player.setAttribute("src", "assets/sound/smb_stage_clear.wav");
-        player.play();
+        bgm.setAttribute("src", "assets/sound/smb_stage_clear.wav");
+        bgm.play();
         this.status = "won";
         this.finishDelay = 1;
       }
@@ -582,14 +583,19 @@ function runLevel(level, Display, andThen) {
   });
 }
 
+bgm.onended = function() {
+    bgm.src= "assets/sound/201-overworld-bgm.mp3";
+    bgm.play();
+};
+
 function runGame(plans, Display) {
   function startLevel(n, lives) {
     runLevel(new Level(plans[n], lives), Display, (status) => {
       if (status === "lost") {
         lives--;
         if (!lives) {
-          player.setAttribute("src", "assets/sound/smb_gameover.wav");
-          player.play();
+          bgm.setAttribute("src", "assets/sound/smb_gameover.wav");
+          bgm.play();
           startLevel(0, 3);
         } else {
           startLevel(n, lives);
@@ -597,8 +603,8 @@ function runGame(plans, Display) {
       } else if (n < plans.length - 1) {
         startLevel(n + 1, lives);
       } else {
-        player.setAttribute("src", "assets/sound/smb_world_clear.wav");
-        player.play();
+        bgm.setAttribute("src", "assets/sound/smb_world_clear.wav");
+        bgm.play();
         startLevel(0, 3);
       }
     });
