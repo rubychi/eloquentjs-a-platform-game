@@ -1,7 +1,6 @@
 # A Platform Game
 
 [![Known Vulnerabilities](https://snyk.io/test/github/rubychi/eloquentjs-a-platform-game/badge.svg)](https://snyk.io/test/github/rubychi/eloquentjs-a-platform-game)
-[![NSP Status](https://nodesecurity.io/orgs/rubychi/projects/f7cfe98b-2c9e-4e0e-b59d-66a273db03fd/badge)](https://nodesecurity.io/orgs/rubychi/projects/f7cfe98b-2c9e-4e0e-b59d-66a273db03fd)
 
 A platform game based on [Dark Blue](http://www.lessmilk.com/game/dark-blue/) from [Eloquent JavaScript](http://eloquentjavascript.net/)
 
