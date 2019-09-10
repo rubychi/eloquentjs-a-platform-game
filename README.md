@@ -6,8 +6,6 @@ A platform game based on [Dark Blue](http://www.lessmilk.com/game/dark-blue/) fr
 
 ## [Live Demo](https://rubychi.github.io/eloquentjs-a-platform-game)
 
-You can see a complete working example [here](https://rubychi.github.io/eloquentjs-a-platform-game)
-
 ## Features
 
 * Four levels, the goal is to collect coins while avoiding touching the lava
