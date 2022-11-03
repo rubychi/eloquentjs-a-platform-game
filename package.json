@@ -16,7 +16,7 @@
     "babel-preset-es2015": "^6.24.1",
     "del": "^3.0.0",
     "eslint": "^4.18.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-babel": "^7.0.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-modernizr": "^1.0.0-alpha",
