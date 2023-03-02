@@ -19,7 +19,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-cssnano": "^2.1.2",
-    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-modernizr": "^4.0.3",
     "gulp-postcss": "^7.0.0",
     "gulp-rev": "^8.0.0",
     "gulp-run": "^1.7.1",
